@@ -1,4 +1,4 @@
-userid,Topic-Id,Sub-Topic-Id,Sub-Topic-Name
+userid,topic_id,sub_topic_id,sub_topic_name
 1,10001,100011,Srting
 1,10001,100012,hashcode
 1,10001,100013,ArrayList
