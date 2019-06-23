@@ -1,0 +1,25 @@
+userid,Topic-Id,topic_name
+1,10001,Core-Java
+1,10002,Advanced Java
+1,10003,Frameworks
+1,10004,Design Pattern
+1,10005,UI
+1,10006,Oracle
+1,10007,Performance Tuning
+1,10008,Sybase
+1,10009,Mongo DB
+1,10010,Unix
+1,10011,DevOps
+1,10012,Data Analytics
+2,10001,Core-Java
+2,10002,Advanced Java
+2,10003,Frameworks
+2,10004,Design Pattern
+2,10005,UI
+2,10006,Oracle
+2,10007,Performance Tuning
+2,10008,Sybase
+2,10009,Mongo DB
+2,10010,Unix
+2,10011,DevOps
+2,10012,Data Analytics
