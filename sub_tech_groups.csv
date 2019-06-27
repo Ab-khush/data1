@@ -39,3 +39,29 @@ userid,topic_id,sub_topic_id,sub_topic_name
 1,10012,100122,Tableou
 1,10012,100123,Hadoop
 1,10012,100124,Kafka
+2,10001,100011,Srting
+2,10001,100012,hashcode
+2,10001,100013,ArrayList
+2,10001,100014,hashmap
+2,10001,100015,MultiThreading
+2,10001,100016,Generics
+2,10002,100021,Java 1.8
+2,10002,100022,lambda
+2,10002,100023,Media
+2,10002,100024,Annotations
+2,10003,100031,Spring
+2,10003,100032,Struts
+2,10003,100033,NodeJS
+2,10003,100034,Redux
+2,10003,100035,Hibernate
+3,10005,100056,Django
+3,10006,100061,Join
+3,10006,100062,Collection
+3,10006,100063,PlSQL
+3,10006,100064,Exception Handling
+3,10006,100065,Analytic Functions
+3,10007,100071,Cost of Query
+3,10007,100072,Perfromance Tuning
+3,10010,100101,Unix scripting
+3,10011,100111,Teamcity
+3,10011,100112,Udeploy
