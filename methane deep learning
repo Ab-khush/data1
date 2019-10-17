@@ -6,3 +6,57 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 from keras.models import Sequential
 from keras.layers import Dense
+
+data = pd.read_csv("C://Users//abkhush//Desktop//notebook//methanol//merge//meth12k+_redo.csv")
+#data = pd.read_csv("C://Users//abkhush//Desktop//notebook//methanol//format//methA-_COH_2000.csv", header=None)
+
+# data.drop(columns=0, inplace=True)
+print(data.head(20))
+
+# train test split
+train=data
+# print(train)
+#train.drop(train.index[12001],inplace=True)
+# train.drop(train.index[1],inplace=True)
+#train.drop(train.index[0],inplace=True)
+print(train.head(10))
+
+print(len(train))
+train_x = train.drop(columns=['Eigenvalue'])
+train_y = train['Eigenvalue']
+test_x = train_x
+test_y = train_y
+print(len(train_x))
+print(len(train_y))
+# print(train_y)
+
+# Deep learning
+
+# initialize
+clf = Sequential()
+
+# input and first hidden layer
+clf.add(Dense(units=20, kernel_initializer='uniform', input_dim=15))
+
+# second hidder layer
+clf.add(Dense(units=20, kernel_initializer='uniform'))
+
+# output layer
+clf.add(Dense(units=1, kernel_initializer='uniform'))
+
+clf.compile(optimizer = 'adam', loss = 'mean_squared_error')
+
+# fit
+clf.fit(train_x.values, train_y.values, batch_size=100, epochs=1000)
+
+# check the accuracy
+y_pred = clf.predict(test_x.values)
+# print(test_x, ", ", y_pred)
+print(y_pred)
+data['Predicted'] = y_pred
+
+
+data['%Diffrence'] = (((data['Predicted']-data['Eigenvalue'])/data['Eigenvalue']))*100
+# data.head(20)
+
+data.mean()
